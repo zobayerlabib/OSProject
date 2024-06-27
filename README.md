@@ -40,7 +40,7 @@ Team Mates: Multinational (Bangladesh, Indonesia, Malaysia)
 
 5. Once you have created you codespace, you will see the following. You might already be familiar with this, since it will look similar to VSCode. 
 
- <img src="./images/UIwebvscode.png" width="70%">
+ <img src="./images/WebVScode.png" width="70%">
 
 6. You will see the [README file](./README.md) file. One is a preview of how it looks like on the web, and the other is the editing view in markdown language. 
 7. Edit the [README file](./README.md). Make sure you have your group details correct, ie, group name, section and team members along with their matric IDs. 
