@@ -93,6 +93,46 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 ```
 2. Run the command **cat /etc/passwd** . ***(1 mark)***
  ```bash
+@zobayerlabib ➜ /workspaces/OSProject (main) $ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:101:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
+codespace:x:1000:1000::/home/codespace:/bin/bash
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+```
+3. Run the command **df** . ***(1 mark)***
+```bash
+@zobayerlabib ➜ /workspaces/OSProject (main) $ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+overlay         32847680 10381532  20772052  34% /
+tmpfs              65536        0     65536   0% /dev
+shm                65536        8     65528   1% /dev/shm
+/dev/root       30298176 24047276   6234516  80% /vscode
+/dev/loop3      32847680 10381532  20772052  34% /workspaces
+/dev/sdb1       46127956      152  43752228   1% /tmp
+```
+4. Run the command **du** . ***(1 mark)***
+```bash
 @zobayerlabib ➜ /workspaces/OSProject (main) $ du
 1972    ./images
 8       ./.git/logs/refs/heads
@@ -198,12 +238,107 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 2832    ./.git
 4828    .
 ```
-3. Run the command **df** . ***(1 mark)*** <img src="./images/Q3df.png" width="80%">.
-4. Run the command **du** . ***(1 mark)***<img src="./images/Q4du1.png" width="40%"> <img src="./images/Q4du2.png" width="40%"> <img src="./images/Q4du3.png" width="40%"> <img src="./images/Q4du4.png" width="40%">
-5. Run the command **ls** . ***(1 mark)***<img src="./images/Q5Is.png" width="80%">.
-6. Run the command **ls -asl** . ***(1 mark)*** <img src="./images/Q6Is.png" width="80%">.
+5. Run the command **ls** . ***(1 mark)***
+```bash
+@zobayerlabib ➜ /workspaces/OSProject (main) $ ls
+README.md  images
+```
+6. Run the command **ls -asl** . ***(1 mark)***
+```bash
+@zobayerlabib ➜ /workspaces/OSProject (main) $ ls -asl 
+total 36
+ 4 drwxrwxrwx+ 4 codespace root  4096 Jun 27 19:00 .
+ 4 drwxr-xrwx+ 5 codespace root  4096 Jun 27 19:00 ..
+ 4 drwxrwxrwx+ 9 codespace root  4096 Jun 27 19:25 .git
+20 -rw-rw-rw-  1 codespace root 17934 Jun 27 19:31 README.md
+ 4 drwxrwxrwx+ 2 codespace root  4096 Jun 27 19:00 images
+```
 7. Run the command **free -h** . ***(1 mark)*** <img src="./images/Q7free.png" width="80%">.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** <img src="./images/Q8cat1.png" width="80%"> <img src="./images/Q8cat2.png" width="80%">
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)***
+```bash
+@zobayerlabib ➜ /workspaces/OSProject (main) $ cat /proc/cpuinfo
+processor       : 0
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+microcode       : 0xffffffff
+cpu MHz         : 3018.348
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+apicid          : 0
+initial apicid  : 0
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+bugs            : sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass srso
+bogomips        : 4890.85
+TLB size        : 2560 4K pages
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 48 bits physical, 48 bits virtual
+power management:
+
+processor       : 1
+vendor_id       : AuthenticAMD
+cpu family      : 25
+model           : 1
+model name      : AMD EPYC 7763 64-Core Processor
+stepping        : 1
+microcode       : 0xffffffff
+cpu MHz         : 3037.353
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+top - 20:43:16 up  2:27,  0 users,  load average: 0.09, 0.29, 0.21
+Tasks:  23 total,   1 running,  22 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2.7 us,  3.5 sy,  0.0 ni, 93.8 id,  0.0 wa,  0.0 hi,  0.0 si, 
+MiB Mem :   7929.6 total,    303.8 free,   1594.4 used,   6031.3 buff/ca
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5951.0 avail M
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ 
+   6540 codespa+  20   0   21.5g 355716  49792 S   1.3   4.4   1:19.81 
+   3374 codespa+  20   0 1184932  65872  42368 S   0.7   0.8   0:04.53 
+   2371 codespa+  20   0 1318612  94744  45312 S   0.3   1.2   0:11.06 
+top - 20:46:04 up  2:30,  0 users,  load average: 0.08, 0.21, 0.19
+Tasks:  23 total,   1 running,  22 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.5 us,  4.9 sy,  0.0 ni, 91.1 id,  0.3 wa,  0.0 hi,  0.2 si,  0.0 st
+MiB Mem :   7929.6 total,    330.3 free,   1565.1 used,   6034.2 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5980.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                     
+   3374 codespa+  20   0 1186388  67240  42368 S   0.7   0.8   0:04.87 node                                                        
+   6540 codespa+  20   0   21.5g 355972  49792 S   0.7   4.4   1:21.58 node                                                        
+      1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.21 docker-init                                                 
+      7 codespa+  20   0    7236   1792   1792 S   0.0   0.0   0:00.01 sleep                                                       
+     70 root      20   0   12196   3480   2560 S   0.0   0.0   0:00.00 sshd                                                        
+    909 root      20   0 1983176  86316  52736 S   0.0   1.1   0:01.02 dockerd                                                     
+    916 root      20   0 1798832  44152  30848 S   0.0   0.5   0:02.11 containerd                                                  
+   1663 codespa+  20   0    2616   1408   1408 S   0.0   0.0   0:00.01 sh                                                          
+   1704 root      20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh                                                          
+   2324 codespa+  20   0    2624   1664   1664 S   0.0   0.0   0:00.01 sh                                                          
+   2371 codespa+  20   0 1319124  95712  45312 S   0.0   1.2   0:11.30 node                                                        
+   2650 codespa+  20   0 1240308  54996  41344 S   0.0   0.7   0:00.60 node                                                        
+   4333 codespa+  20   0    2616   1408   1408 S   0.0   0.0   0:00.00 sh                                                          
+   4377 root      20   0    2616   1664   1664 S   0.0   0.0   0:00.00 sh                                                          
+   4590 codespa+  20   0   16632  11392   3200 S   0.0   0.1   0:00.19 bash                                                        
+   6285 codespa+  20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh                                                          
+   6317 root      20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh                                                          
+   6557 codespa+  20   0 1240564  57352  41216 S   0.0   0.7   0:00.56 node                                                        
+   6589 codespa+  20   0 1010584  72396  40704 S   0.0   0.9   0:02.35 node                                                        
+   6680 codespa+  20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh                                                          
+   6724 root      20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh                                                          
+  15925 codespa+  20   0  994792  54604  40192 S   0.0   0.7   0:00.28 node                                                        
+  45900 codespa+  20   0   10892   3712   3200 R   0.0   0.0   0:00.03 top 
+```
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** <img src="./images/Q9top.png" width="80%">.
 10. Run the command **uname -a**. ***(1 mark)*** <img src="./images/Q10uname.png" width="80%">.
 11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
