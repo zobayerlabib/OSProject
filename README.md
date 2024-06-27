@@ -86,10 +86,10 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** <img src="./images/Q1pwd.png" width="80%">.
+1. Run the command **pwd** . ***(1 mark)*** <img src="./images/Q1pwd.png" width="50%">.
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** <img src="./images/Q2cat.png" width="80%">.
 3. Run the command **df** . ***(1 mark)*** <img src="./images/Q3df.png" width="80%">.
-4. Run the command **du** . ***(1 mark)***<img src="./images/Q4du1.png" width="80%"> <img src="./images/Q4du2.png" width="80%"> <img src="./images/Q4du3.png" width="80%"> <img src="./images/Q4du4.png" width="80%">
+4. Run the command **du** . ***(1 mark)***<img src="./images/Q4du1.png" width="40%"> <img src="./images/Q4du2.png" width="40%"> <img src="./images/Q4du3.png" width="40%"> <img src="./images/Q4du4.png" width="40%">
 5. Run the command **ls** . ***(1 mark)***<img src="./images/Q5Is.png" width="80%">.
 6. Run the command **ls -asl** . ***(1 mark)*** <img src="./images/Q6Is.png" width="80%">.
 7. Run the command **free -h** . ***(1 mark)*** <img src="./images/Q7free.png" width="80%">.
