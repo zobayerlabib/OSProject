@@ -86,8 +86,118 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** <img src="./images/Q1pwd.png" width="50%">.
-2. Run the command **cat /etc/passwd** . ***(1 mark)*** <img src="./images/Q2cat.png" width="80%">.
+1. Run the command **pwd** . ***(1 mark)***
+```bash
+@zobayerlabib ➜ /workspaces/OSProject (main) $ pwd
+/workspaces/OSProject
+```
+2. Run the command **cat /etc/passwd** . ***(1 mark)***
+ ```bash
+@zobayerlabib ➜ /workspaces/OSProject (main) $ du
+1972    ./images
+8       ./.git/logs/refs/heads
+12      ./.git/logs/refs/remotes/origin
+16      ./.git/logs/refs/remotes
+28      ./.git/logs/refs
+36      ./.git/logs
+4       ./.git/lfs/tmp
+8       ./.git/lfs
+8       ./.git/info
+68      ./.git/hooks
+8       ./.git/objects/fd
+8       ./.git/objects/a3
+8       ./.git/objects/71
+8       ./.git/objects/f6
+16      ./.git/objects/fa
+20      ./.git/objects/14
+12      ./.git/objects/3d
+12      ./.git/objects/29
+12      ./.git/objects/6e
+12      ./.git/objects/13
+8       ./.git/objects/b9
+16      ./.git/objects/4a
+12      ./.git/objects/72
+12      ./.git/objects/74
+16      ./.git/objects/70
+12      ./.git/objects/2e
+12      ./.git/objects/17
+8       ./.git/objects/d8
+8       ./.git/objects/c0
+8       ./.git/objects/0a
+4       ./.git/objects/info
+12      ./.git/objects/e5
+8       ./.git/objects/81
+12      ./.git/objects/62
+24      ./.git/objects/d2
+8       ./.git/objects/e9
+12      ./.git/objects/af
+16      ./.git/objects/fb
+8       ./.git/objects/f2
+12      ./.git/objects/bf
+8       ./.git/objects/96
+8       ./.git/objects/1b
+8       ./.git/objects/0d
+8       ./.git/objects/b6
+12      ./.git/objects/43
+8       ./.git/objects/3a
+8       ./.git/objects/61
+12      ./.git/objects/28
+8       ./.git/objects/b2
+12      ./.git/objects/ff
+8       ./.git/objects/83
+8       ./.git/objects/e6
+8       ./.git/objects/86
+12      ./.git/objects/64
+8       ./.git/objects/52
+8       ./.git/objects/ab
+8       ./.git/objects/d4
+8       ./.git/objects/93
+8       ./.git/objects/a4
+8       ./.git/objects/0b
+12      ./.git/objects/73
+12      ./.git/objects/d9
+8       ./.git/objects/18
+8       ./.git/objects/c3
+8       ./.git/objects/fe
+8       ./.git/objects/4f
+12      ./.git/objects/b5
+8       ./.git/objects/58
+8       ./.git/objects/2b
+8       ./.git/objects/cb
+12      ./.git/objects/1c
+12      ./.git/objects/44
+8       ./.git/objects/fc
+8       ./.git/objects/a9
+8       ./.git/objects/5e
+8       ./.git/objects/f7
+8       ./.git/objects/c6
+8       ./.git/objects/7b
+8       ./.git/objects/24
+8       ./.git/objects/55
+8       ./.git/objects/60
+8       ./.git/objects/eb
+8       ./.git/objects/91
+8       ./.git/objects/49
+8       ./.git/objects/3f
+8       ./.git/objects/47
+8       ./.git/objects/cd
+1828    ./.git/objects/pack
+8       ./.git/objects/20
+8       ./.git/objects/a6
+8       ./.git/objects/e7
+8       ./.git/objects/41
+12      ./.git/objects/4b
+8       ./.git/objects/04
+2640    ./.git/objects
+8       ./.git/refs/heads
+4       ./.git/refs/tags
+12      ./.git/refs/remotes/origin
+16      ./.git/refs/remotes
+32      ./.git/refs
+4       ./.git/branches
+2832    ./.git
+4828    .
+```
 3. Run the command **df** . ***(1 mark)*** <img src="./images/Q3df.png" width="80%">.
 4. Run the command **du** . ***(1 mark)***<img src="./images/Q4du1.png" width="40%"> <img src="./images/Q4du2.png" width="40%"> <img src="./images/Q4du3.png" width="40%"> <img src="./images/Q4du4.png" width="40%">
 5. Run the command **ls** . ***(1 mark)***<img src="./images/Q5Is.png" width="80%">.
