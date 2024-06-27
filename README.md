@@ -86,16 +86,16 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __Fill answer here__.
-2. Run the command **cat /etc/passwd** . ***(1 mark)*** __Fill answer here__.
-3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
-4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
-5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
-6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
-7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
-10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
+1. Run the command **pwd** . ***(1 mark)*** <img src="./images/Q1pwd.png" width="80%">.
+2. Run the command **cat /etc/passwd** . ***(1 mark)*** <img src="./images/Q2cat.png" width="80%">.
+3. Run the command **df** . ***(1 mark)*** <img src="./images/Q3df.png" width="80%">.
+4. Run the command **du** . ***(1 mark)***<img src="./images/Q4du1.png" width="80%"> <img src="./images/Q4du2.png" width="80%"> <img src="./images/Q4du3.png" width="80%"> <img src="./images/Q4du4.png" width="80%">
+5. Run the command **ls** . ***(1 mark)***<img src="./images/Q5Is.png" width="80%">.
+6. Run the command **ls -asl** . ***(1 mark)*** <img src="./images/Q6Is.png" width="80%">.
+7. Run the command **free -h** . ***(1 mark)*** <img src="./images/Q7free.png" width="80%">.
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** <img src="./images/Q8cat1.png" width="80%"> <img src="./images/Q8cat2.png" width="80%">
+9. Run the command **top** and type **q** to quit. ***(1 mark)*** <img src="./images/Q9top.png" width="80%">.
+10. Run the command **uname -a**. ***(1 mark)*** <img src="./images/Q10uname.png" width="80%">.
 11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
