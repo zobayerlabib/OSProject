@@ -341,13 +341,14 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5980.3 avail Mem
 ```
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** <img src="./images/Q9top.png" width="80%">.
 10. Run the command **uname -a**. ***(1 mark)*** <img src="./images/Q10uname.png" width="80%">.
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+11. What is the available free memory in the system. ***(1 mark)*** __330.3 MiB__.
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** __20,772,052 KiB__.
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Linux 64-bit, AMD EPYC 7763 64-Core Processor__.
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __ls: Lists files and directories.
+ls -asl: Lists files and directories with detailed information including file size, permissions, and other attributes.__.
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __2560 4K pages__.
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __3018.348 MHz__.
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __'node' with PID 6540__.
 
 ## Running your own container instance.
 
