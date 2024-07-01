@@ -357,6 +357,7 @@ ls -asl: Lists files and directories with detailed information including file si
 docker pull debian
 docker run --detach -it debian
 ```
+ ```bash
 @ybdhani ➜ /workspaces/OSProject (main) $ docker pull debian
 Using default tag: latest
 donlatest: Pulling from library/debian
@@ -366,6 +367,7 @@ Status: Downloaded newer image for debian:latest
 docker.io/library/debian:latest
 
 48d2852ef4769327ac86ae36234a9ea84a9208727602bb07fc4c8d4f993d6996
+```
 
 2. This will run the debian container. To check if the debian container is running, type
 ```bash
@@ -374,15 +376,17 @@ CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS         PORTS     NAME
 f65be1987f84   debian    "bash"    4 minutes ago   Up 4 minutes             romantic_jackson
 ```
 
+```bash
 CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS          PORTS     NAMES
 48d2852ef476   debian    "bash"    35 seconds ago   Up 34 seconds             interesting_golick
-
+```
 3. Keep note of the name used by your container, this is usually given random names unless you specify your own name. Now run a bash command on the container. Make sure you use the name of your container instead of the one shown here. 
 ```bash
 docker exec -i -t romantic_jackson /bin/bash
 ```
+```bash
 @ybdhani ➜ /workspaces/OSProject (main) $ docker exec -i -t interesting_golick  /bin/bash
-
+```
 4. Create a file on the container. First you must make sure you are in the bash command prompt of the container. The container is new, and does not have any software other than the debian OS. To create a new file, you will need an editor installed. In the bash shell of the container, run the package manager apt-get to install nano text editor. 
 
 ```bash
@@ -426,7 +430,7 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 @joeynor ➜ /workspaces/OSProject (main) $ docker rm romantic_jackson
 ```
-
+```bash
 @ybdhani ➜ /workspaces/OSProject (main) $ docker ps -a
 CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS         PORTS     NAMES
 48d2852ef476   debian    "bash"    7 minutes ago   Up 6 minutes             interesting_golick
@@ -447,7 +451,7 @@ root@24d8d901d2cc:/# exit
 exit
 @ybdhani ➜ /workspaces/OSProject (main) $ root@new_container:/# ls -l /root/helloworld.txt
 bash: root@new_container:/#: No such file or directory
-
+```
 ***Questions:***
 
 1. Are files in the container persistent. Why not?. ***(1 mark)*** __No, files in the container are not persistent because the container's filesystem is temporary and gets deleted when the container is removed. To keep files, use Docker volumes.
