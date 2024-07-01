@@ -542,7 +542,11 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Permissions: drwxr-xr-x, User: root, Group: root__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Permissions: drwxr-xr-x, User: root, Group: root.  To break down the permissions:
+d: Indicates it's a directory.
+rwx: Permissions for the user root (owner) are read, write, and execute.
+r-x: Permissions for the group root (group owner) are read and execute.
+r-x: Permissions for others (everyone else) are read and execute.__.
 2. What port is the apache web server running. ***(1 mark)*** __Port 80__.
 The Apache web server is running on port 80 inside the container, as specified in the docker run command.
 3. What port is open for http protocol on the host machine? ***(1 mark)*** __Port 8080__.
@@ -587,7 +591,7 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** ```@zobayerlabib ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
+1. Are you able to ping? Show your output . ***(1 mark)*** Yes, now I am able to ping. Output:```@zobayerlabib ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
 PING c2 (172.20.0.3): 56 data bytes
 64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.131 ms
 64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.075 ms
@@ -597,7 +601,7 @@ PING c2 (172.20.0.3): 56 data bytes
 64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.066 ms
 64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.086 ms
 64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.073 ms```
-2. What is different from the previous ping in the section above? ***(1 mark)*** __after bridging the networks, the ping is successful as both containers are now connected through bridgenet__.
+2. What is different from the previous ping in the section above? ***(1 mark)*** __After bridging the networks, the ping is successful as both containers (c1 and c2) are now connected through bridgenet.This allowing the ping command to resolve c2 to its IP address (172.20.0.3) and receive responses.__.
 
 ## Intermediate Level (10 marks bonus)
 
