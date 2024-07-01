@@ -8,7 +8,7 @@ Team Mates: Multinational (Bangladesh, Indonesia, Malaysia)
 1. Zobayer Md Ahsanul Mahbub (2125129)
 2. Md Jobayer Al Hasan (2119729)
 3. Sulaeman Ramadhani Nurfikri (2029353)
-4. 
+4. Muhammad Mu'izzuddin bin Mohd Nasri (2213759)
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
