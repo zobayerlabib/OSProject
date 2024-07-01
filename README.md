@@ -499,7 +499,7 @@ sudo chown -R codespace:codespace myroot
      ```
    - then we will see something like:
      ```bash
-     -rw-r--r-- 1 root root 0 Jul  1 12:00 myfile
+     -rw-r--r-- 1 root root 0 Jul  1 12:07 myfile
      ```
 
 2. **Change Permissions:**
@@ -513,7 +513,7 @@ sudo chown -R codespace:codespace myroot
      ```
    - Then we should now see:
      ```bash
-     -rw-r--r-- 1 codespace codespace 0 Jul  1 12:00 myfile
+     -rw-r--r-- 1 codespace codespace 0 Jul  1 12:08 myfile
      ```
 
 By following these steps, you ensure that the files created in the Docker container are accessible and manageable from the host machine under the `codespace` user.
