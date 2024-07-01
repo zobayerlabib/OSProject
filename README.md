@@ -759,14 +759,14 @@ b. **Verify network connectivity between containers:**
    docker network connect mynetwork nodejs-container
    ```
 
-3. **Check Node.js application logs:**
+c. **Check Node.js application logs:**
    ```sh
    docker logs nodejs-container
    ```
 
    Look for any errors in the application logs that might indicate why the server is not running.
 
-4. **Ensure the MySQL table is created and populated:**
+d. **Ensure the MySQL table is created and populated:**
    Run the following SQL commands in the MySQL container to create and populate the `mytable` table:
 
    ```sql
@@ -779,10 +779,10 @@ b. **Verify network connectivity between containers:**
    INSERT INTO mytable (name, value) VALUES ('example1', 'value1'), ('example2', 'value2'), ('example3', 'value3');
    ```
 
-5. **Update the Node.js application to connect to the correct MySQL host:**
+e. **Update the Node.js application to connect to the correct MySQL host:**
    Ensure that the Node.js application is configured to connect to the MySQL database using the correct host (usually the name of the MySQL container or the network alias).
 
-6. **Restart the Node.js container:**
+f. **Restart the Node.js container:**
    ```sh
    docker restart nodejs-container
    ```
