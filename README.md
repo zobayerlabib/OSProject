@@ -579,8 +579,10 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)*** __PING c2 (172.19.0.2): 56 data bytes
+64 bytes from 172.19.0.2: seq=0 ttl=64 time=0.123 ms
+64 bytes from 172.19.0.2: seq=1 ttl=64 time=0.101 ms__.
+2. What is different from the previous ping in the section above? ***(1 mark)*** __after bridging the networks, the ping is successful as both containers are now connected through bridgenet__.
 
 ## Intermediate Level (10 marks bonus)
 
