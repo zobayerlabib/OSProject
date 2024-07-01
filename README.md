@@ -489,11 +489,11 @@ sudo chown -R codespace:codespace myroot
 ### Steps to Verify and Change Permissions:
 
 1. **Verify Permissions:**
-   - After creating a file in the `/root` directory of the Debian container, check the permissions on the host machine: 
+   - After creating a file in the `/root` directory of the Debian container, we need to check the permissions on the host machine: 
      ```bash
      @jobayer9999 ➜ /workspaces/OSProject (main) $ ls -l myroot
      ```
-   - You should see something like:
+   - then we will see something like:
      ```bash
      -rw-r--r-- 1 root root 0 Jul  1 12:00 myfile
      ```
@@ -507,7 +507,7 @@ sudo chown -R codespace:codespace myroot
      ```bash
      @jobayer9999 ➜ /workspaces/OSProject (main) $ ls -l myroot
      ```
-   - You should now see:
+   - Then we should now see:
      ```bash
      -rw-r--r-- 1 codespace codespace 0 Jul  1 12:00 myfile
      ```
