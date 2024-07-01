@@ -741,7 +741,53 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 ***Questions:***
 
 1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Error: getaddrinfo ENOTFOUND mysql-container__. Node.js can't reach the MySQL service due to the seperate network configurations
-2. Show the instruction needed to make this work. ***(1 mark)*** __Connect the MySQL container to the nodejsnet network: docker network connect nodejsnet mysql-container__.
+2. Show the instruction needed to make this work. ***(1 mark)*** To resolve the error and make the setup work, ensure the following:
+
+a. **Check if both containers are running:**
+   ```sh
+   docker ps
+   ```
+
+   You should see both the Node.js container and the MySQL container running.
+
+b. **Verify network connectivity between containers:**
+   Ensure that the Node.js container is on the same network as the MySQL container. If they are on different networks, connect them using a common network.
+
+   ```sh
+   docker network create mynetwork
+   docker network connect mynetwork mysql-container
+   docker network connect mynetwork nodejs-container
+   ```
+
+3. **Check Node.js application logs:**
+   ```sh
+   docker logs nodejs-container
+   ```
+
+   Look for any errors in the application logs that might indicate why the server is not running.
+
+4. **Ensure the MySQL table is created and populated:**
+   Run the following SQL commands in the MySQL container to create and populate the `mytable` table:
+
+   ```sql
+   CREATE TABLE mytable (
+     id INT AUTO_INCREMENT PRIMARY KEY,
+     name VARCHAR(255) NOT NULL,
+     value VARCHAR(255) NOT NULL
+   );
+
+   INSERT INTO mytable (name, value) VALUES ('example1', 'value1'), ('example2', 'value2'), ('example3', 'value3');
+   ```
+
+5. **Update the Node.js application to connect to the correct MySQL host:**
+   Ensure that the Node.js application is configured to connect to the MySQL database using the correct host (usually the name of the MySQL container or the network alias).
+
+6. **Restart the Node.js container:**
+   ```sh
+   docker restart nodejs-container
+   ```
+
+By following these instructions, you should be able to resolve the connectivity issues and successfully access the Node.js application running inside the Docker container.
 
 
 
