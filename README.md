@@ -741,7 +741,8 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 ***Questions:***
 
 1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Error: getaddrinfo ENOTFOUND mysql-container__. Node.js can't reach the MySQL service due to the seperate network configurations
-2. Show the instruction needed to make this work. ***(1 mark)*** To resolve the error and make the setup work, ensure the following:
+2. Show the instruction needed to make this work. ***(1 mark)***
+ To resolve the error and make the setup work, ensure the following:
 
 a. **Check if both containers are running:**
    ```sh
